@@ -7,7 +7,7 @@ const variants = {
   enter: { opacity: 1, x: 0, y: 0 },
   exit: { opacity: 0, x: -0, y: 20 }
 }
-const Article = ({ children, title }) => (
+const Article = ({ children, title = 'Homepage' }) => (
   <motion.article
     initial="hidden"
     animate="enter"

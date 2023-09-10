@@ -39,7 +39,7 @@ export default function Navbar(props) {
         center='center'
         justifyContent='space-between'
       >
-        <Flex align='center' mr={5}>
+        <Flex alignItems='center' mr={5}>
           <Heading as='h1' size='lg' letterSpacing='tighter'>
             <Logo />
           </Heading>
@@ -48,28 +48,28 @@ export default function Navbar(props) {
           direction={{ base: 'column', md: 'row' }}
           display={{ base: 'none', md: 'flex' }}
           width={{ base: 'full', md: 'auto' }}
-          mt={{ base: 4, md: 0 }}
+          mt={{ base: 4, md: 2 }}
           alignItems='center'
           flexGrow={1}
         >
           <LinkItem href='/projects' path={path}>Projects</LinkItem>
-          <LinkItem href='/posts' path={path}>Posts</LinkItem>
+          {/* <LinkItem href='/posts' path={path}>Posts</LinkItem> */}
         </Stack>
         <Flex justifyContent='flex-end'>
-          <ThemeToggleButton />
+          {/* <ThemeToggleButton /> */}
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
             <Menu>
               <MenuButton as={IconButton} icon={<HamburgerIcon />} variant='outline' aria-label="Options" />
               <MenuList>
                 <NextLink href='/' passHref>
-                  <MenuItem >About</MenuItem>
+                  <MenuItem >Home</MenuItem>
                 </NextLink>
                 <NextLink href='/projects' passHref>
                   <MenuItem>Projects</MenuItem>
                 </NextLink>
-                <NextLink href='/posts' passHref>
+                {/* <NextLink href='/posts' passHref>
                   <MenuItem>Posts</MenuItem>
-                </NextLink>
+                </NextLink> */}
               </MenuList>
             </Menu>
           </Box>

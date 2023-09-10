@@ -1,12 +1,25 @@
+import React from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
-import { Box, Container, Flex, Heading, Image as ChakraImage, useColorModeValue, Button } from '@chakra-ui/react'
+import {
+  Box,
+  Container,
+  Flex, Heading,
+  Image as ChakraImage,
+  useColorModeValue,
+  Button,
+  ListItem,
+  Link,
+  Icon,
+  List
+} from '@chakra-ui/react'
 import Section from '@/components/Section'
 import Paragraph from '@/components/Paragraph'
 import { DownloadIcon } from '@chakra-ui/icons'
 import Article from '@/components/layouts/Article'
+import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,7 +27,7 @@ export default function Home() {
   return (
     <Article>
       <Container>
-        <Box borderRadius='lg' bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} p={3} mb={6} alignItems='center'>
+        <Box borderRadius='lg' bg={useColorModeValue('whiteAlpha.700', 'blackAlpha.700')} p={3} mb={6} alignItems='center'>
           Nice to meet you! I'm a Web and Mobile Front End Developer
         </Box>
         <Box display={{ md: 'flex' }}>
@@ -68,7 +81,31 @@ export default function Home() {
             <Button bg='glassTeal' color='black' rightIcon={<DownloadIcon />}>Resume</Button>
           </Flex>
         </Section>
+
+        <Section delay={.3}>
+          <Heading as='h3' variant='section-title'>My Socials</Heading>
+          <List>
+            <ListItem>
+              <Link target="_blank" rel="noopener noreferrer" href="https://github.com/leorod90">
+                <Button
+                  variant='ghost'
+                  colorScheme='glassTeal'
+                  leftIcon={<Icon as={IoLogoGithub} />}
+                > @leorod90</Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/leo-rodriguez-957aab13b/">
+                <Button
+                  variant='ghost'
+                  colorScheme='glassTeal'
+                  leftIcon={<Icon as={IoLogoLinkedin} />}
+                > @leo-rodriguez</Button>
+              </Link>
+            </ListItem>
+          </List>
+        </Section>
       </Container>
-    </Article>
+    </Article >
   )
 }

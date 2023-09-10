@@ -34,20 +34,22 @@ export default function ProjectGridItem({
   thumbnail
 }) {
   return (
-    <Flex w='100%' alignItems='center' direction='column'>
-      <NextLink href={`/projects/${id}`} />
-      <LinkBox cursor='pointer'>
+    <Flex w='100%' alignItems='center' direction='column' >
+      <NextLink href={`/projects/${id}`}>
+        {/* <LinkBox cursor='pointer'> */}
         <Image
           src={thumbnail}
           alt={title}
           className='grid-item-thumbnail'
           placeholder='blur'
           loading='lazy'
+          cursor='pointer'
         />
-      </LinkBox>
-      <LinkOverlay href={`/projects/${id}`} target='_blank'>
-        <Text mt={2} fontSize={20}>{title}</Text>
-      </LinkOverlay>
+        {/* </LinkBox> */}
+      </NextLink>
+      <NextLink href={`/projects/${id}`}>
+        <Text mt={2} fontSize={20} cursor='pointer'>{title}</Text>
+      </NextLink>
       <Text fontSize={14}>{children}</Text>
     </Flex>
   )
