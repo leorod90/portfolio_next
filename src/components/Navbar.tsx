@@ -1,8 +1,8 @@
 import { useColorModeValue, Link, Box, Container, Flex, Heading, Stack, Menu, MenuButton, IconButton, MenuList, MenuItem } from "@chakra-ui/react"
 import NextLink from 'next/link'
-import Logo from "./logo"
 import { HamburgerIcon } from "@chakra-ui/icons"
 import ThemeToggleButton from "./ThemeToggleButton"
+import Logo from "./Logo"
 
 const LinkItem = ({ href, path, children }) => {
   const active = path === href
