@@ -19,12 +19,12 @@ padding:10px
 
 const Logo = () => {
   const footPrintImg = `/images/footprint${useColorModeValue('', '-dark')}.png`
-
+  // const color= {useColorModeValue('gray.800', 'whiteAlpha.900')} 
   return (
     <Link href='/'>
       <LogoBox>
         {/* <Image src={footPrintImg} width={20} height={20} alt="logo" /> */}
-        <Text color={useColorModeValue('gray.800', 'whiteAlpha.900')} fontWeight='bold' ml={3}>
+        <Text color='whiteAlpha.900' fontWeight='bold' ml={3}>
           Leo Rodriguez
         </Text>
       </LogoBox>

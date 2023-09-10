@@ -6,7 +6,8 @@ import Logo from "./Logo"
 
 const LinkItem = ({ href, path, children }) => {
   const active = path === href
-  const inactiveColor = useColorModeValue('gray.200', 'whiteAlpha.900')
+  // const inactiveColor = useColorModeValue('gray.200', 'whiteAlpha.900')
+  const inactiveColor = 'whiteAlpha.900'
 
   return (
     <NextLink href={href}>
@@ -19,7 +20,8 @@ const LinkItem = ({ href, path, children }) => {
 
 export default function Navbar(props) {
   const { path } = props
-  const bg = useColorModeValue('#f0e7db', '#202023')
+  // const bg = useColorModeValue('#f0e7db', '#202023')
+  const bg = '#202023'
 
   return (
     <Box

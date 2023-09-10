@@ -24,10 +24,12 @@ import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  // const bg = { useColorModeValue('whiteAlpha.700', 'blackAlpha.700') }
+  const bg = 'blackAlpha.700'
   return (
     <Article>
       <Container>
-        <Box borderRadius='lg' bg={useColorModeValue('whiteAlpha.700', 'blackAlpha.700')} p={3} mb={6} alignItems='center'>
+        <Box borderRadius='lg' bg={bg} p={3} mb={6} alignItems='center'>
           Nice to meet you! I&apos;m a Web and Mobile Front End Developer
         </Box>
         <Box display={{ md: 'flex' }}>
