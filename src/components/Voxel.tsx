@@ -48,7 +48,7 @@ const VoxelCpu = () => {
     if (container) {
       const scW = container.clientWidth
       const scH = container.clientHeight
-  
+
       const renderer = new THREE.WebGLRenderer({
         antialias: true,
         alpha: true
@@ -59,14 +59,14 @@ const VoxelCpu = () => {
       container.appendChild(renderer.domElement)
       refRenderer.current = renderer
       const scene = new THREE.Scene()
-  
+
       const target = new THREE.Vector3(-0.5, 1.2, 0)
       const initialCameraPosition = new THREE.Vector3(
         10000,   // Adjust the X position
         5000,    // Lower the Y position
         10       // Adjust the Z position
       )
-  
+
       const scale = scH * 0.0001 + 4.0;  // Experiment with different scale values
       const camera = new THREE.OrthographicCamera(
         -scale / 4,
@@ -78,19 +78,19 @@ const VoxelCpu = () => {
       )
       camera.position.copy(initialCameraPosition)
       camera.lookAt(target)
-  
+
       const ambientLight = new THREE.AmbientLight(0xffffff, 1)
       scene.add(ambientLight)
-  
+
       // Add a directional light from the top
       const directionalLight = new THREE.DirectionalLight(0xffffff, 1)
       directionalLight.position.set(0, 100, 0) // Adjust the Y position for the top light
       scene.add(directionalLight)
-  
+
       const controls = new OrbitControls(camera, renderer.domElement)
       controls.autoRotate = true
       controls.target = target
-  
+
       loadGLTFModel(scene, '/3d/3d_me.glb', {
         receiveShadow: false,
         castShadow: false
@@ -98,18 +98,18 @@ const VoxelCpu = () => {
         animate()
         setLoading(false)
       })
-  
+
       let req = null
       let frame = 0
       const animate = () => {
         req = requestAnimationFrame(animate)
-  
+
         frame = frame <= 100 ? frame + 1 : frame
-  
+
         if (frame <= 100) {
           const p = initialCameraPosition
           const rotSpeed = -easeOutCirc(frame / 120) * Math.PI * 20
-  
+
           camera.position.y = 10
           camera.position.x =
             p.x * Math.cos(rotSpeed) + p.z * Math.sin(rotSpeed)
@@ -119,10 +119,10 @@ const VoxelCpu = () => {
         } else {
           controls.update()
         }
-  
+
         renderer.render(scene, camera)
       }
-  
+
       return () => {
         cancelAnimationFrame(req)
         renderer.domElement.remove()
@@ -130,7 +130,7 @@ const VoxelCpu = () => {
       }
     }
   }, [])
-  
+
 
   useEffect(() => {
     window.addEventListener('resize', handleWindowResize, false)
@@ -150,8 +150,8 @@ const VoxelCpu = () => {
       m='auto'
       // mt={['-20px', '-60px', '-120px']}
       // mb={['-40px', '-140px', '-200px']}
-      w={[smlSq, mdSq, lgSq]}
-      h={[smlSq, mdSq, lgSq]}
+      w={[mdSq, lgSq]}
+      h={[mdSq, lgSq]}
       position='relative'
     >
       {loading && (
