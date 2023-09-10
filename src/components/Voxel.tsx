@@ -13,7 +13,7 @@ const VoxelCpu = () => {
   const refContainer = useRef()
   const refRenderer = useRef()
 
-  const urlDogGLB = (process.env.NODE_ENV === 'production' ? 'https://craftzdog.global.ssl.fastly.net/homepage' : '') + '/dog.glb'
+  // const urlDogGLB = (process.env.NODE_ENV === 'production' ? 'https://craftzdog.global.ssl.fastly.net/homepage' : '') + '/dog.glb'
 
 
   const [loading, setLoading] = useState(true)
