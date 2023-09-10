@@ -28,7 +28,7 @@ export default function Home() {
     <Article>
       <Container>
         <Box borderRadius='lg' bg={useColorModeValue('whiteAlpha.700', 'blackAlpha.700')} p={3} mb={6} alignItems='center'>
-          Nice to meet you! I'm a Web and Mobile Front End Developer
+          Nice to meet you! I&apos;m a Web and Mobile Front End Developer
         </Box>
         <Box display={{ md: 'flex' }}>
           <Box flexGrow={1}>
