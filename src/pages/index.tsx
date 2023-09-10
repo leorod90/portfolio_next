@@ -29,7 +29,7 @@ export default function Home() {
   return (
     <Article>
       <Container>
-        <Box borderRadius='lg' bg={bg} p={3} mb={6} alignItems='center'>
+        <Box borderRadius='lg' bg={bg} p={3} mb={6} alignItems='center' mt={-10}>
           Nice to meet you! I&apos;m a Web and Mobile Front End Developer
         </Box>
         <Box display={{ md: 'flex' }}>
