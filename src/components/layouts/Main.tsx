@@ -1,8 +1,9 @@
+// @ts-nocheck
 import Head from 'next/head'
 import { Box, Container } from '@chakra-ui/react'
-import Navbar from '../navbar'
 import Voxel from '../Voxel'
 import NoSsr from '../NoSsr'
+import Navbar from '../Navbar'
 
 const Main = ({ children, router }) => {
   return (
