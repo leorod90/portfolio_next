@@ -53,7 +53,6 @@ export default function Navbar(props) {
           flexGrow={1}
         >
           <LinkItem href='/projects' path={path}>Projects</LinkItem>
-          {/* <LinkItem href='/posts' path={path}>Posts</LinkItem> */}
         </Stack>
         <Flex justifyContent='flex-end'>
           {/* <ThemeToggleButton /> */}
@@ -67,9 +66,6 @@ export default function Navbar(props) {
                 <NextLink href='/projects' passHref>
                   <MenuItem>Projects</MenuItem>
                 </NextLink>
-                {/* <NextLink href='/posts' passHref>
-                  <MenuItem>Posts</MenuItem>
-                </NextLink> */}
               </MenuList>
             </Menu>
           </Box>
