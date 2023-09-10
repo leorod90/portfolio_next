@@ -35,8 +35,8 @@ export default function Navbar(props) {
         display='flex'
         p={2}
         maxW='container.md'
-        wrap='wrap'
-        center='center'
+        flexWrap='wrap'
+        alignItems='center'
         justifyContent='space-between'
       >
         <Flex alignItems='center' mr={5}>
