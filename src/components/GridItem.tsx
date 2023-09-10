@@ -43,7 +43,9 @@ export default function ProjectGridItem({
           className='grid-item-thumbnail'
           placeholder='blur'
           loading='lazy'
-          cursor='pointer'
+          style={{
+            cursor: 'pointer'
+          }}
         />
         {/* </LinkBox> */}
       </NextLink>
