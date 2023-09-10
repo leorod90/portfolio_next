@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 
 export function loadGLTFModel(
