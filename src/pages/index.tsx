@@ -65,7 +65,7 @@ export default function Home() {
           <Heading as='h3' variant='section-title'>About Me</Heading>
           <Paragraph>I am a self taught developer with over 2 years of industry experience.
             I love building, designing and creating things. While I primarily focus on the front end,
-            I do enjoy all aspects of code. Im lucky that my hobby for developing is now my job and I couldn't
+            I do enjoy all aspects of code. Im lucky that my hobby for developing is now my job and I couldn&apos;t
             be happier.</Paragraph>
           <Flex alignItems='center' my='4'>
             <Button bg='glassTeal' color='black' rightIcon={<DownloadIcon />}>Resume</Button>
