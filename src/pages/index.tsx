@@ -43,17 +43,7 @@ export default function Home() {
             ml={{ md: 6 }}
             justifyContent='center'
           >
-            <Box
-            // borderColor='whiteAlpha.800'
-            // borderWidth={2}
-            // height={80}
-            // width={80}
-            // borderStyle='solid'
-            // // maxWidth='100px'
-            // display='inline-block'
-            // borderRadius='full'
-            // overflow='hidden'
-            >
+            <Box>
               <ChakraImage
                 width={150}
                 height={150}
