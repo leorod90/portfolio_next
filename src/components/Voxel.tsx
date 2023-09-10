@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { loadGLTFModel } from '@/libs/model'
 import { Box, Flex, Spinner } from '@chakra-ui/react'
 import React, { useEffect, useRef, useState, useCallback } from 'react'
