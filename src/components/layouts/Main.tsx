@@ -1,11 +1,20 @@
 // @ts-nocheck
 import Head from 'next/head'
-import { Box, Container } from '@chakra-ui/react'
+import { useEffect } from 'react'
+import { Box, Container, useColorMode } from '@chakra-ui/react'
 import Voxel from '../Voxel'
 import NoSsr from '../NoSsr'
 import Navbar from '../Navbar'
 
 const Main = ({ children, router }) => {
+  const { colorMode, toggleColorMode } = useColorMode()
+
+  useEffect(() => {
+    if (colorMode === "light") {
+      toggleColorMode();
+    }
+  }, []);
+  
   return (
     <Box as='main' pb={8}>
       <Head>
