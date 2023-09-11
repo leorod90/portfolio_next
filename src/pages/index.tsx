@@ -25,14 +25,10 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   // const bg = { useColorModeValue('whiteAlpha.700', 'blackAlpha.700') }
-  const bg = 'blackAlpha.700'
+
   return (
     <Article>
       <Container>
-        <Box borderRadius='lg' bg={bg} p={3} mb={6} alignItems='center' mt='-40px'>
-          Nice to meet you! I&apos;m a Web and Mobile Front End Developer.<br />
-          You can wiggle my avatar :)
-        </Box>
         <Box display={{ md: 'flex' }}>
           <Box flexGrow={1}>
             <Heading as='h2' variant='page-titles'>

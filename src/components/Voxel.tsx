@@ -1,6 +1,6 @@
 // @ts-nocheck
 import { loadGLTFModel } from '@/libs/model'
-import { Box, Flex, Spinner } from '@chakra-ui/react'
+import { Box, Container, Spinner } from '@chakra-ui/react'
 import React, { useEffect, useRef, useState, useCallback } from 'react'
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
@@ -143,31 +143,52 @@ const VoxelCpu = () => {
   const mdSq = 240
   const lgSq = 400
 
+  const bg = 'blackAlpha.700'
+
   return (
-    <Box
-      cursor='pointer'
-      ref={refContainer}
-      bg='#413835'
-      // className='voxel-cpu'
-      m='auto'
-      // mt={['-20px', '-60px', '-120px']}
-      // mb={['-40px', '-140px', '-200px']}
-      mb='20px'
-      w={[mdSq, lgSq]}
-      h={[mdSq, lgSq]}
+    <Container
+      w='95%'
       position='relative'
+      mb='20px'
     >
-      {loading && (
-        <Spinner
-          size='xl'
-          position='absolute'
-          left="50%"
-          top="50%"
-          ml='calc(0px - var(--spinner-size) / 2)'
-          mt='calc(0px - var(--spinner-size))'
-        />
-      )}
-    </Box>
+      <Box
+        cursor='pointer'
+        ref={refContainer}
+        bg='#413835'
+        // className='voxel-cpu'
+        m='auto'
+        // mt={['-20px', '-60px', '-120px']}
+        // mb={['-40px', '-140px', '-200px']}
+        w={[mdSq, lgSq]}
+        h={[mdSq, lgSq]}
+        position='relative'
+      >
+        {loading && (
+          <Spinner
+            size='xl'
+            position='absolute'
+            left="50%"
+            top="50%"
+            ml='calc(0px - var(--spinner-size) / 2)'
+            mt='calc(0px - var(--spinner-size))'
+          />
+        )}
+      </Box>
+      <Box
+        borderRadius='lg'
+        bg={bg}
+        p={3}
+        mb={6}
+        alignItems='center'
+        bottom='-24px'
+        left={0}
+        right={0}
+        position='absolute'
+      >
+        Nice to meet you! I&apos;m a Web and Mobile Front End Developer.<br />
+        You can wiggle my avatar :)
+      </Box>
+    </Container>
   )
 }
 
