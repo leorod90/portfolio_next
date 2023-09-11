@@ -45,6 +45,10 @@ const fonts = {
   // body: `"Poppins"', sans-serif"`
 }
 
+const icons = {
+  hamburger: 'white',
+}
+
 const colors = {
   glassTeal: '#88ccca'
 }
@@ -59,7 +63,8 @@ const theme = extendTheme({
   styles,
   components,
   fonts,
-  colors
+  colors,
+  icons
 })
 
 export default theme

@@ -61,7 +61,7 @@ export default function Navbar(props) {
           {/* <ThemeToggleButton /> */}
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
             <Menu>
-              <MenuButton as={IconButton} icon={<HamburgerIcon />} variant='outline' aria-label="Options" />
+              <MenuButton as={IconButton} icon={<HamburgerIcon color='white' />} variant='outline' aria-label="Options" />
               <MenuList>
                 <NextLink href='/' passHref>
                   <MenuItem >Home</MenuItem>
