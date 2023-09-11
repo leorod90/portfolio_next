@@ -10,11 +10,12 @@ const Main = ({ children, router }) => {
   const { colorMode, toggleColorMode } = useColorMode()
 
   useEffect(() => {
+    console.log(colorMode)
     if (colorMode === "light") {
       toggleColorMode();
     }
   }, []);
-  
+
   return (
     <Box as='main' pb={8}>
       <Head>
