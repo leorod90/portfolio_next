@@ -34,30 +34,21 @@ export const Meta = ({ children }) => (
 )
 
 export const ProjectVideoPlayer = ({ src }) => {
-  // const [mounted, setMounted] = useState(false);
-  // const videoRef = useRef(null);
+  const videoRef = useRef(null);
 
-  // useEffect(() => {
-  //   // Check if the user is on a mobile device
-  //   const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+  const handleClick = () => {
+    const videoElement = videoRef.current;
 
-  //   // Wait for the component to be mounted and the videoRef to be assigned
-  //   if (mounted && videoRef.current) {
-  //     const videoElement = videoRef.current;
-
-  //     // Add the 'autoplay' attribute if the user is on a mobile device
-  //     // if (isMobile) {
-  //     videoElement.setAttribute('autoplay', true);
-  //     // }
-  //   }
-
-  //   // Set the component as mounted
-  //   setMounted(true);
-  // }, [mounted]); // The effect now depends on the 'mounted' state
+    if (videoElement.paused) {
+      videoElement.play();
+    } else {
+      videoElement.pause();
+    }
+  };
 
   return (
-    <Box overflow='hidden'>
-      <video controls >
+    <Box overflow="hidden" cursor='pointer' position='relative'>
+      <video ref={videoRef} onClick={handleClick} loop muted>
         <source src={src} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
