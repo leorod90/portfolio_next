@@ -14,15 +14,18 @@ export default function Huddln() {
           Huddln <Badge textTransform="none">2021 - Current</Badge>
         </Title>
         <Paragraph>
-          Huddln is a mobile social media marketplace that lets you transform your existing content into NFTs
-          (non-fungible tokens). A new type of social-to-earn experience to encourage support from over 10k community
-          members.
+          I was the Lead front end developer for our mobile app, web app and admin dashboard. UI was handled by<span style={{ color: '#88ccca' }}> Joe </span>
+          and <Link href='https://www.linkedin.com/in/jackie-gonzalez-56299bb5/' rel="noopener noreferrer" target='_blank'> Jackie</Link>. While
+          I handled the fun UX things like animations, feedback and transitions. This was a difficult yet rewarding project that I am so happy
+          to have been a part of.
         </Paragraph>
-        {/* <UnorderedList my={4}>
-          <ListItem>Ramen shop recommendation based on photo</ListItem>
-          <ListItem>Show shops near your current location</ListItem>
-          <ListItem>Open in Tabelog/Foursquare</ListItem>
-        </UnorderedList> */}
+        <UnorderedList my={4}>
+          <ListItem>Ability to make an NFT with your camera and upload it</ListItem>
+          <ListItem>Buy, Exchange  or Sell NFT&apos;s using crypto</ListItem>
+          <ListItem>Connect your wallet and track your funds with interactive graphs</ListItem>
+          <ListItem>Add and message your favorite users</ListItem>
+          <ListItem>Leave a like and comment on your favorite items</ListItem>
+        </UnorderedList>
 
         <List ml={4} my={4}>
           <ListItem>
@@ -35,7 +38,7 @@ export default function Huddln() {
           </ListItem>
           <ListItem>
             <Meta>Stack</Meta>
-            <span>React, React Native, Firebase, GraphQl, Node</span>
+            <span>React, React Native, Firebase, GraphQl, Node, Algolia</span>
           </ListItem>
         </List>
 

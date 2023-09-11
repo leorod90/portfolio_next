@@ -14,8 +14,8 @@ export default function Consultarer() {
         </Title>
         <Paragraph>
           I was hired to help handle the <span style={{ color: '#88ccca' }}>iOS</span> version of the Consultarer app. Overall designs were done
-          by <Link href='https://www.linkedin.com/in/hong-erica/' rel="noopener noreferrer" target='_blank'>Erica</Link> and
-          <Link href='https://www.linkedin.com/in/harshidavedesigns/' rel="noopener noreferrer" target='_blank'>Harshi</Link>.
+          by<Link href='https://www.linkedin.com/in/hong-erica/' rel="noopener noreferrer" target='_blank'> Erica </Link>and
+          <Link href='https://www.linkedin.com/in/harshidavedesigns/' rel="noopener noreferrer" target='_blank'> Harshi</Link>.
           I only had minor input on the UI/UX (mostly for difference between iOS and Android devices). When we have something
           to show, I&apos;ll update here.
         </Paragraph>
