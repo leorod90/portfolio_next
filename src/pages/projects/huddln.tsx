@@ -18,11 +18,11 @@ export default function Huddln() {
           (non-fungible tokens). A new type of social-to-earn experience to encourage support from over 10k community
           members.
         </Paragraph>
-        <UnorderedList my={4}>
+        {/* <UnorderedList my={4}>
           <ListItem>Ramen shop recommendation based on photo</ListItem>
           <ListItem>Show shops near your current location</ListItem>
           <ListItem>Open in Tabelog/Foursquare</ListItem>
-        </UnorderedList>
+        </UnorderedList> */}
 
         <List ml={4} my={4}>
           <ListItem>
