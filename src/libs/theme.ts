@@ -5,13 +5,19 @@ const styles = {
   global: (props) => ({
     'html, body': {
       // bg: mode('#f0e7db', '#202023')(props)
-      bg: '#332421',
+      bg: '#3B2725',
       color: 'white'
     },
   }),
 }
 
 const components = {
+  Container: {
+    // Customize the max width here
+    baseStyle: {
+      maxW: "1200px", // Replace with your desired max width
+    },
+  },
   Heading: {
     variants: {
       'section-title': {

@@ -5,6 +5,7 @@ import React from 'react'
 import huddlnThumbnail from "../../public/photos/huddln_thumb.png"
 import meThumbnail from "../../public/photos/me_thumb.png"
 import consultarerThumbnail from "../../public/photos/consultarer_thumb.png"
+import sdfds from "../../public/mp4/huddln_1.mp4"
 
 
 //MARGIN FOR CPU BOREKN it covers huddln

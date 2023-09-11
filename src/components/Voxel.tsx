@@ -60,7 +60,7 @@ const VoxelCpu = () => {
       refRenderer.current = renderer
       const scene = new THREE.Scene()
 
-      const target = new THREE.Vector3(-0.5, 1.2, 0)
+      const target = new THREE.Vector3(0, .8, 0)
       const initialCameraPosition = new THREE.Vector3(
         25000,   // Adjust the X position
         5000,    // Lower the Y position

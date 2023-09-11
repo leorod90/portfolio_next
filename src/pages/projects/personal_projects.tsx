@@ -1,14 +1,10 @@
 import Paragraph from '@/components/Paragraph'
-import { Meta, ProjectImage, Title, ProjectVideoPlayer } from '@/components/Project'
-import Section from '@/components/Section'
+import { Meta, ProjectImage, Title } from '@/components/Project'
 import Article from '@/components/layouts/Article'
-import { Badge, Container, List, Link, ListItem, UnorderedList, SimpleGrid } from '@chakra-ui/react'
+import { Badge, Container, List, Link, ListItem, UnorderedList } from '@chakra-ui/react'
 import React from 'react'
-// import Huddln_1 from "/mp4/huddln_1.mp4"
-// import Huddln_1 from "../../../public/mp4/huddln_1.mp4"
-import Huddln_1 from "../../../public/mp4/huddln_1.mp4";
 
-export default function Huddln() {
+export default function PersonalProjects() {
   return (
     <Article title='Huddln'>
       <Container>
@@ -42,20 +38,6 @@ export default function Huddln() {
         </List>
 
         {/* <ProjectImage /> */}
-        <SimpleGrid columns={[1, 1, 2]} gap={6}>
-          <Section>
-            <ProjectVideoPlayer src={require('../../../public/mp4/huddln_1.mp4')} />
-          </Section>
-          {/* <Section>
-            <ProjectVideoPlayer src={require('../../../public/mp4/huddln_2.mp4')} />
-          </Section>
-          <Section>
-            <ProjectVideoPlayer src={require('../../../public/mp4/huddln_3.mp4')} />
-          </Section>
-          <Section>
-            <ProjectVideoPlayer src={require('../../../public/mp4/huddln_4.mp4')} />
-          </Section> */}
-        </SimpleGrid>
       </Container>
     </Article>
   )
