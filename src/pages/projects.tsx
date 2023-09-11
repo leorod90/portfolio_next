@@ -21,7 +21,7 @@ export default function Projects() {
           </ProjectGridItem>
         </Section>
         <Section>
-          <ProjectGridItem id='personal_projects' title='Leo' thumbnail={meThumbnail}>
+          <ProjectGridItem id='personal_projects' title='Personal Projects' thumbnail={meThumbnail}>
             A collection of my personal Apps
           </ProjectGridItem>
         </Section>

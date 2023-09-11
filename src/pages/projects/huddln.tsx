@@ -2,15 +2,16 @@ import Paragraph from '@/components/Paragraph'
 import { Meta, ProjectImage, Title, ProjectVideoPlayer } from '@/components/Project'
 import Section from '@/components/Section'
 import Article from '@/components/layouts/Article'
-import { Badge, Container, List, Link, ListItem, UnorderedList, SimpleGrid, Text } from '@chakra-ui/react'
+import { Badge, Container, List, Link, ListItem, UnorderedList, SimpleGrid, Text, Flex } from '@chakra-ui/react'
 import React from 'react'
+import Image from 'next/image'
 
 export default function Huddln() {
   return (
     <Article title='Huddln'>
       <Container>
         <Title>
-          Huddln <Badge>2023</Badge>
+          Huddln <Badge textTransform="none">2021 - Current</Badge>
         </Title>
         <Paragraph>
           Huddln is a mobile social media marketplace that lets you transform your existing content into NFTs
@@ -26,7 +27,7 @@ export default function Huddln() {
         <List ml={4} my={4}>
           <ListItem>
             <Meta>Website</Meta>
-            <Link href='https://discover.xp-protocol.io/'>https://discover.xp-protocol.io/</Link>
+            <Link href='https://discover.xp-protocol.io/' rel="noopener noreferrer" target='_blank'>https://discover.xp-protocol.io/</Link>
           </ListItem>
           <ListItem>
             <Meta>Platform</Meta>
@@ -34,12 +35,38 @@ export default function Huddln() {
           </ListItem>
           <ListItem>
             <Meta>Stack</Meta>
-            <span>React, React Native</span>
+            <span>React, React Native, Firebase, GraphQl, Node</span>
           </ListItem>
         </List>
-        <Text fontWeight='bold' color='glassTeal'>Click Videos to Pause/Play</Text>
+
+        <Flex gap={6} mt={6}>
+          <Link href='https://apps.apple.com/us/app/huddln/id1503825604' rel="noopener noreferrer" target='_blank'>
+            <Image
+              width={160}
+              height={60}
+              src='/photos/app_store.png'
+              alt='apple'
+              // className='grid-item-thumbnail'
+              // placeholder='blur'
+              loading='lazy'
+            />
+          </Link>
+          <Link href='https://play.google.com/store/apps/details?id=com.huddln&hl=en_US&gl=US' rel="noopener noreferrer" target='_blank'>
+            <Image
+              width={160}
+              height={60}
+              src='/photos/google_play.png'
+              alt='android'
+              // className='grid-item-thumbnail'
+              // placeholder='blur'
+              loading='lazy'
+            />
+          </Link>
+        </Flex>
+
+        <Text fontWeight='bold' color='glassTeal' mt={6}>Click Videos to Pause/Play</Text>
         {/* <ProjectImage /> */}
-        <SimpleGrid columns={[1, 1, 2]} gap={6} mt={3}>
+        <SimpleGrid columns={[1, 1, 2]} gap={1} mt={3}>
           <Section>
             <ProjectVideoPlayer src={require('../../../public/mp4/huddln_1.mp4')} />
           </Section>
