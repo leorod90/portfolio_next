@@ -37,22 +37,26 @@ export default function ProjectGridItem({
     <Flex w='100%' alignItems='center' direction='column' >
       <NextLink href={`/projects/${id}`}>
         {/* <LinkBox cursor='pointer'> */}
-        <Image
-          src={thumbnail}
-          alt={title}
-          className='grid-item-thumbnail'
-          placeholder='blur'
-          loading='lazy'
-          style={{
-            cursor: 'pointer'
-          }}
-        />
+        <Flex borderRadius='10px' shadow='md' overflow='hidden'>
+          <Image
+            src={thumbnail}
+            alt={title}
+            className='grid-item-thumbnail'
+            placeholder='blur'
+            loading='lazy'
+            style={{
+              aspectRatio: 16 / 9,
+              objectFit: 'cover',
+              cursor: 'pointer'
+            }}
+          />
+        </Flex>
         {/* </LinkBox> */}
       </NextLink>
       <NextLink href={`/projects/${id}`}>
         <Text mt={2} fontSize={20} cursor='pointer'>{title}</Text>
       </NextLink>
-      <Text fontSize={14}>{children}</Text>
+      <Text fontSize={14} textAlign='center'>{children}</Text>
     </Flex>
   )
 }

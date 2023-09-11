@@ -2,7 +2,11 @@ import ProjectGridItem from '@/components/GridItem'
 import Section from '@/components/Section'
 import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
 import React from 'react'
-import huddlnThumbnail from "../../public/photos/me.jpg"
+import huddlnThumbnail from "../../public/photos/huddln_thumb.png"
+import meThumbnail from "../../public/photos/me_thumb.png"
+import consultarerThumbnail from "../../public/photos/consultarer_thumb.png"
+
+
 //MARGIN FOR CPU BOREKN it covers huddln
 export default function Projects() {
   return (
@@ -14,24 +18,19 @@ export default function Projects() {
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
           <ProjectGridItem id='huddln' title='Huddln' thumbnail={huddlnThumbnail}>
-          huddlnhuddlnhuddlnhuddlnhuddlnhuddlnss
+            A mobile NFT social media app with over 10k users.
           </ProjectGridItem>
         </Section>
         <Section>
-          <ProjectGridItem id='leo_eats' title='Leo Eats' thumbnail={huddlnThumbnail}>
-          leo_eatsleo_eatsleo_eatsleo_eatsleo_eats
-          </ProjectGridItem>
-        </Section>
-        {/* <Section>
-          <ProjectGridItem id='leo_weather' title='Leo Weather' thumbnail={huddlnThumbnail}>
-          leo_weatherleo_weatherleo_weatherleo_weatherleo_weather
+          <ProjectGridItem id='personal_projects' title='Leo' thumbnail={meThumbnail}>
+            A collection of my personal Apps
           </ProjectGridItem>
         </Section>
         <Section>
-          <ProjectGridItem id='leo_marvel' title='Leo Marvel' thumbnail={huddlnThumbnail}>
-          leo_marvelleo_marvelleo_marvelsfdhd hdss
+          <ProjectGridItem id='consultarer' title='Consultarer' thumbnail={consultarerThumbnail}>
+            A market Hub that takes work, interests and virtual connections and improve how we virtually live and work.
           </ProjectGridItem>
-        </Section> */}
+        </Section>
       </SimpleGrid>
     </Container>
   )

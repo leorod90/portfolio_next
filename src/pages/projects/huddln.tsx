@@ -12,7 +12,9 @@ export default function huddln() {
           Huddln <Badge>2023</Badge>
         </Title>
         <Paragraph>
-          dplfkds;kfds fksdk fdls;fkds ;lfkds ;flsdkf
+          Huddln is a mobile social media marketplace that lets you transform your existing content into NFTs
+          (non-fungible tokens). A new type of social-to-earn experience to encourage support from over 10k community
+          members.
         </Paragraph>
         <UnorderedList my={4}>
           <ListItem>Ramen shop recommendation based on photo</ListItem>

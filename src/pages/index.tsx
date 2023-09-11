@@ -29,8 +29,9 @@ export default function Home() {
   return (
     <Article>
       <Container>
-        <Box borderRadius='lg' bg={bg} p={3} mb={6} alignItems='center' mt={-10}>
-          Nice to meet you! I&apos;m a Web and Mobile Front End Developer
+        <Box borderRadius='lg' bg={bg} p={3} mb={6} alignItems='center' mt='-40px'>
+          Nice to meet you! I&apos;m a Web and Mobile Front End Developer.<br />
+          You can wiggle my avatar :)
         </Box>
         <Box display={{ md: 'flex' }}>
           <Box flexGrow={1}>
@@ -70,7 +71,9 @@ export default function Home() {
             I do enjoy all aspects of code. Im lucky that my hobby for developing is now my job and I couldn&apos;t
             be happier.</Paragraph>
           <Flex alignItems='center' my='4'>
-            <Button bg='glassTeal' color='black' rightIcon={<DownloadIcon />}>Resume</Button>
+            <Link download href="/Resume.pdf">
+              <Button bg='glassTeal' color='black' rightIcon={<DownloadIcon />}>Resume</Button>
+            </Link>
           </Flex>
         </Section>
 

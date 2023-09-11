@@ -62,7 +62,7 @@ const VoxelCpu = () => {
 
       const target = new THREE.Vector3(-0.5, 1.2, 0)
       const initialCameraPosition = new THREE.Vector3(
-        10000,   // Adjust the X position
+        25000,   // Adjust the X position
         5000,    // Lower the Y position
         10       // Adjust the Z position
       )
@@ -145,11 +145,14 @@ const VoxelCpu = () => {
 
   return (
     <Box
+      cursor='pointer'
       ref={refContainer}
+      bg='#413835'
       // className='voxel-cpu'
       m='auto'
       // mt={['-20px', '-60px', '-120px']}
       // mb={['-40px', '-140px', '-200px']}
+      mb='20px'
       w={[mdSq, lgSq]}
       h={[mdSq, lgSq]}
       position='relative'

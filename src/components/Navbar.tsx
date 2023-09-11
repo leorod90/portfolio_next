@@ -54,6 +54,7 @@ export default function Navbar(props) {
           alignItems='center'
           flexGrow={1}
         >
+          <LinkItem href='/' path={path}>Home</LinkItem>
           <LinkItem href='/projects' path={path}>Projects</LinkItem>
         </Stack>
         <Flex justifyContent='flex-end'>
