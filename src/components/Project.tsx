@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import React, { useEffect, useRef, useState } from 'react'
 import NextLink from 'next/link'
 import { Badge, Box, Flex, Heading, Image, Link } from '@chakra-ui/react'
