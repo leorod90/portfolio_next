@@ -1,8 +1,10 @@
-import { useColorModeValue, Link, Box, Container, Flex, Heading, Stack, Menu, MenuButton, IconButton, MenuList, MenuItem } from "@chakra-ui/react"
+// @ts-nocheck
+import { useColorModeValue, Text, Box, Container, Flex, Heading, Stack, Menu, MenuButton, IconButton, MenuList, MenuItem } from "@chakra-ui/react"
 import NextLink from 'next/link'
 import { HamburgerIcon } from "@chakra-ui/icons"
 import ThemeToggleButton from "./ThemeToggleButton"
 import Logo from "./Logo"
+import { useEffect, useRef, useState } from "react"
 
 const LinkItem = ({ href, path, children }) => {
   const active = path === href
@@ -19,9 +21,29 @@ const LinkItem = ({ href, path, children }) => {
 }
 
 export default function Navbar(props) {
+  const [showBurger, setShowBurger] = useState(false)
+  const menuRef = useRef(null);
   const { path } = props
   // const bg = useColorModeValue('#f0e7db', '#202023')
   const bg = '#202023'
+
+  // Add a click event listener to the document
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef?.current && !menuRef?.current?.contains(event.target)) {
+        // Click occurred outside the menu, so close the menu
+        setShowBurger(false);
+      }
+    };
+
+    document.addEventListener('click', handleClickOutside);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, []);
+
 
   return (
     <Box
@@ -59,18 +81,58 @@ export default function Navbar(props) {
         </Stack>
         <Flex justifyContent='flex-end'>
           {/* <ThemeToggleButton /> */}
-          <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
-            <Menu>
-              <MenuButton as={IconButton} icon={<HamburgerIcon />} variant='outline' aria-label="Options" />
-              <MenuList>
-                <NextLink href='/' passHref>
-                  <MenuItem >Home</MenuItem>
-                </NextLink>
-                <NextLink href='/projects' passHref>
-                  <MenuItem>Projects</MenuItem>
-                </NextLink>
-              </MenuList>
-            </Menu>
+          <Box ml={2} display={{ base: 'inline-block', md: 'none' }} pos='relative' ref={menuRef}>
+            <Box
+              px='10px'
+              py='8px'
+              borderRadius='5px'
+              borderWidth='1px'
+              borderColor='#505050'
+              cursor='pointer'
+              onClick={() => setShowBurger(!showBurger)}
+            >
+              <HamburgerIcon />
+            </Box>
+            <Flex
+              direction='column'
+              bg='#303033'
+              mt='10px'
+              right='0px'
+              zIndex={100}
+              pos='absolute'
+              py='6px'
+              // h='px'
+              w='120px'
+              borderRadius='5px'
+              display={{ base: showBurger ? 'flex' : 'none', md: 'none' }}
+            >
+              <NextLink href='/' passHref onClick={() => setShowBurger(false)}>
+                <Flex
+                  px='12px'
+                  py='6px'
+                  align='center'
+                  _hover={{
+                    bg: '#404043',
+                    cursor: 'pointer',
+                  }}
+                >
+                  <Text >Home</Text>
+                </Flex>
+              </NextLink>
+              <NextLink href='/projects' passHref onClick={() => setShowBurger(false)}>
+                <Flex
+                  px='12px'
+                  py='8px'
+                  align='center'
+                  _hover={{
+                    bg: '#404043',
+                    cursor: 'pointer',
+                  }}
+                >
+                  <Text>Projects</Text>
+                </Flex>
+              </NextLink>
+            </Flex>
           </Box>
         </Flex>
       </Container>
