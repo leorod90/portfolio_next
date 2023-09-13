@@ -1,3 +1,4 @@
+import GreenText from '@/components/GreenText'
 import Paragraph from '@/components/Paragraph'
 import { Meta, ProjectImage, Title, ProjectVideoPlayer } from '@/components/Project'
 import Section from '@/components/Section'
@@ -13,7 +14,7 @@ export default function Consultarer() {
           Consultarer <Badge textTransform="none">2023 - Current</Badge>
         </Title>
         <Paragraph>
-          I was hired to help handle the <span style={{ color: '#88ccca' }}>iOS</span> version of the Consultarer app. Overall designs were done
+          I was hired to help handle the <GreenText>iOS</GreenText> version of the Consultarer app. Overall designs were done
           by<Link href='https://www.linkedin.com/in/hong-erica/' rel="noopener noreferrer" target='_blank'> Erica </Link>and
           <Link href='https://www.linkedin.com/in/harshidavedesigns/' rel="noopener noreferrer" target='_blank'> Harshi</Link>.
           I only had minor input on the UI/UX (mostly for difference between iOS and Android devices). When we have something

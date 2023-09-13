@@ -5,6 +5,7 @@ import Article from '@/components/layouts/Article'
 import { Badge, Container, List, Link, ListItem, UnorderedList, SimpleGrid, Text, Flex } from '@chakra-ui/react'
 import React from 'react'
 import Image from 'next/image'
+import GreenText from '@/components/GreenText'
 
 export default function Huddln() {
   return (
@@ -14,7 +15,7 @@ export default function Huddln() {
           Huddln <Badge textTransform="none">2021 - Current</Badge>
         </Title>
         <Paragraph>
-          I was the Lead front end developer for our mobile app, web app and admin dashboard. UI was handled by<span style={{ color: '#88ccca' }}> Joe </span>
+          I was the Lead front end developer for our mobile app, web app and admin dashboard. UI was handled by<GreenText>Joe </GreenText>
           and <Link href='https://www.linkedin.com/in/jackie-gonzalez-56299bb5/' rel="noopener noreferrer" target='_blank'> Jackie</Link>. While
           I handled the fun UX things like animations, feedback and transitions. This was a difficult yet rewarding project that I am so happy
           to have been a part of.

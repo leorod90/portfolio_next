@@ -1,9 +1,10 @@
 // @ts-nocheck
 import { loadGLTFModel } from '@/libs/model'
 import { Box, Container, Spinner } from '@chakra-ui/react'
-import React, { useEffect, useRef, useState, useCallback } from 'react'
+import React, { useEffect, useRef, useState, useCallback, Text } from 'react'
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
+import GreenText from './GreenText'
 
 function easeOutCirc(x) {
   return Math.sqrt(1 - Math.pow(x - 1, 4))
@@ -185,7 +186,7 @@ const VoxelCpu = () => {
         right={0}
         position='absolute'
       >
-        Nice to meet you! I&apos;m a Web and Mobile Front End Developer.<br />
+        Nice to meet you! I&apos;m a <GreenText fontWeight='bold'>Front End Developer</GreenText> and aspiring <GreenText fontWeight='bold'>UI/UX Designer</GreenText>.<br />
         You can wiggle my avatar :)
       </Box>
     </Container>
