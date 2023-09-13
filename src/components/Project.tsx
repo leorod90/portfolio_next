@@ -62,7 +62,7 @@ export const ProjectVideoPlayer = ({ src }) => {
 
   return (
     <Box overflow="hidden" cursor='pointer' position='relative'>
-      <video ref={videoRef} onClick={handleClick} controls={showsControls} loop={showsControls} muted>
+      <video ref={videoRef} onClick={handleClick} controls={showsControls} autoPlay={showsControls} loop={showsControls} muted >
         <source src={src} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
