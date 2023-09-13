@@ -2,7 +2,7 @@
 
 import React, { useEffect, useRef, useState } from 'react'
 import NextLink from 'next/link'
-import { Badge, Box, Flex, Heading, Image, Link } from '@chakra-ui/react'
+import { Badge, Box, Flex, Heading, Image, Link, Text } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 
 export const Title = ({ children }) => {
@@ -30,13 +30,22 @@ export const ProjectImage = ({ src, alt }) => (
 )
 
 export const Meta = ({ children }) => (
-  <Badge color='#ffeedb' mr={2} >
+  <Badge color='#ffeedb' mr={2} bg='rgba(255,255,255,.1)' >
     {children}
   </Badge>
 )
 
 export const ProjectVideoPlayer = ({ src }) => {
+  const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
   const videoRef = useRef(null);
+  const [showsControls, setShowsControls] = useState(true)
+
+  useEffect(() => {
+    if (!isMobile) {
+      setShowsControls(false)
+    }
+  }, [])
+
 
   const handleClick = () => {
     const videoElement = videoRef.current;
@@ -50,7 +59,7 @@ export const ProjectVideoPlayer = ({ src }) => {
 
   return (
     <Box overflow="hidden" cursor='pointer' position='relative'>
-      <video ref={videoRef} onClick={handleClick} loop muted>
+      <video ref={videoRef} onClick={handleClick} controls={showsControls} loop muted>
         <source src={src} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
