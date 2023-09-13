@@ -5,6 +5,7 @@ import { Box, Container, useColorMode } from '@chakra-ui/react'
 import Voxel from '../Voxel'
 import NoSsr from '../NoSsr'
 import Navbar from '../Navbar'
+import PreLoader, { PreLoaderStyle } from '../PreLoader/PreLoader'
 
 const Main = ({ children, router }) => {
   return (
@@ -13,10 +14,9 @@ const Main = ({ children, router }) => {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <title>Leo Rodriguez - Homepage</title>
       </Head>
-      {/* <PreLoaderStyle /> */}
-      {/* <PreLoader /> */}
       <Navbar path={router.asPath} />
-
+      <PreLoaderStyle />
+      <PreLoader />
       <Container maxW='container.md' pt={14}>
         <NoSsr>
           <Voxel />
