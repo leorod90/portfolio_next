@@ -7,21 +7,14 @@ import NoSsr from '../NoSsr'
 import Navbar from '../Navbar'
 
 const Main = ({ children, router }) => {
-  const { colorMode, toggleColorMode } = useColorMode()
-
-  useEffect(() => {
-    if (colorMode === "light") {
-      toggleColorMode();
-    }
-  }, []);
-
   return (
     <Box as='main' pb={8}>
       <Head>
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <title>Leo Rodriguez - Homepage</title>
       </Head>
-
+      {/* <PreLoaderStyle /> */}
+      {/* <PreLoader /> */}
       <Navbar path={router.asPath} />
 
       <Container maxW='container.md' pt={14}>
