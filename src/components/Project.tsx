@@ -36,12 +36,13 @@ export const Meta = ({ children }) => (
 )
 
 export const ProjectVideoPlayer = ({ src }) => {
-  const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
   const videoRef = useRef(null);
   const [showsControls, setShowsControls] = useState(true)
 
   useEffect(() => {
-    if (!isMobile) {
+    if (typeof window !== 'undefined' && /iPad|iPhone|iPod/.test(window.navigator.userAgent) && !window.MSStream) {
+
+    } else {
       setShowsControls(false)
     }
   }, [])
