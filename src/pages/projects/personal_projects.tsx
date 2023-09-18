@@ -52,24 +52,59 @@ export default function PersonalProjects() {
           mt={3}
           flexDirection={['column', 'column', 'row']} // Change direction on small screens
         >
-          <Flex w="100%" height="100%" justifyContent='center' alignItems='center' order={[1, 1, 2]}>
-            <Flex justifyContent='space-between' width='320px'>
-              <Link href='https://apps.apple.com/us/app/leo-eats/id1590637132' rel="noopener noreferrer" target='_blank'>
+          <Flex
+            w="100%"
+            height="100%"
+            justifyContent='center'
+            alignItems='center'
+            order={[1, 1, 1]}>
+            <Flex
+              direction='column'
+              justifyContent='center'
+              alignItems='center'
+              my='15px'
+              bg='#413835'
+              px='5px'
+              py='15'
+              borderRadius='5px'>
+              <Image
+                width={50}
+                height={50}
+                src='/photos/good_eats.png'
+                alt='android'
+                // className='grid-item-thumbnail'
+                // placeholder='blur'
+                loading='lazy'
+              />
+              <Flex justifyContent='space-between' width='320px' mt='15px'>
+                <Link href='https://apps.apple.com/us/app/leo-eats/id1590637132' rel="noopener noreferrer" target='_blank'>
+                  <Image
+                    width={150}
+                    height={60}
+                    src='/photos/app_store.png'
+                    alt='apple'
+                    // className='grid-item-thumbnail'
+                    // placeholder='blur'
+                    loading='lazy'
+                  />
+                </Link>
+                <Link href='https://play.google.com/store/apps/details?id=expo.leorod18.good_eats' rel="noopener noreferrer" target='_blank'>
+                  <Image
+                    width={150}
+                    height={60}
+                    src='/photos/google_play.png'
+                    alt='android'
+                    // className='grid-item-thumbnail'
+                    // placeholder='blur'
+                    loading='lazy'
+                  />
+                </Link>
+              </Flex>
+              <Link mt='10px' href='https://github.com/leorod90/leo-eats' rel="noopener noreferrer" target='_blank'>
                 <Image
                   width={150}
                   height={60}
-                  src='/photos/app_store.png'
-                  alt='apple'
-                  // className='grid-item-thumbnail'
-                  // placeholder='blur'
-                  loading='lazy'
-                />
-              </Link>
-              <Link href='https://play.google.com/store/apps/details?id=expo.leorod18.good_eats' rel="noopener noreferrer" target='_blank'>
-                <Image
-                  width={150}
-                  height={60}
-                  src='/photos/google_play.png'
+                  src='/photos/github.png'
                   alt='android'
                   // className='grid-item-thumbnail'
                   // placeholder='blur'
@@ -80,10 +115,9 @@ export default function PersonalProjects() {
           </Flex>
           <SimpleGrid
             justifyItems="center"
-            columns={[1, 2, 2]}
+            columns={[2, 2, 2]}
             gap={1}
-            mt={3}
-            order={[2, 2, 1]} // Change order on small screens
+            order={[1, 1, 1]} // Change order on small screens
           >
             <ProjectVideoPlayer src={require('../../../public/mp4/eats_1.mp4')} />
             <ProjectVideoPlayer src={require('../../../public/mp4/eats_2.mp4')} />
@@ -92,14 +126,49 @@ export default function PersonalProjects() {
 
         {/* <Text fontWeight='bold' color='glassTeal' mt={6}>Click Videos to Pause/Play</Text> */}
 
-        <SimpleGrid justifyItems='center' columns={[1, 1, 2]} gap={1} mt={3}>
-          <Flex w="100%" height="100%" justifyContent='center' alignItems='center' order={[1, 1, 1]}>
-            <Flex justifyContent='flex-end' width='320px'>
-              <Link href='https://play.google.com/store/apps/details?id=com.leo_marvel' rel="noopener noreferrer" target='_blank'>
+        <SimpleGrid justifyItems='center' columns={[1, 1, 2]} gap={1}>
+          <Flex
+            w="100%"
+            height="100%"
+            justifyContent='center'
+            alignItems='center'
+            order={[1, 1, 2]}>
+            <Flex
+              direction='column'
+              justifyContent='center'
+              alignItems='center'
+              my='15px'
+              bg='#413835'
+              px='5px'
+              py='15'
+              borderRadius='5px'>
+              <Image
+                width={50}
+                height={50}
+                src='/photos/leo_marvel.png'
+                alt='android'
+                // className='grid-item-thumbnail'
+                // placeholder='blur'
+                loading='lazy'
+              />
+              <Flex justifyContent='flex-end' width='320px' mt='15px'>
+                <Link href='https://play.google.com/store/apps/details?id=com.leo_marvel' rel="noopener noreferrer" target='_blank'>
+                  <Image
+                    width={150}
+                    height={60}
+                    src='/photos/google_play.png'
+                    alt='android'
+                    // className='grid-item-thumbnail'
+                    // placeholder='blur'
+                    loading='lazy'
+                  />
+                </Link>
+              </Flex>
+              <Link mt='10px' href='https://github.com/leorod90/leo_marvel' rel="noopener noreferrer" target='_blank'>
                 <Image
                   width={150}
                   height={60}
-                  src='/photos/google_play.png'
+                  src='/photos/github.png'
                   alt='android'
                   // className='grid-item-thumbnail'
                   // placeholder='blur'
@@ -108,7 +177,7 @@ export default function PersonalProjects() {
               </Link>
             </Flex>
           </Flex>
-          <SimpleGrid justifyItems='center' columns={[1, 2, 2]} gap={1} order={[2, 2, 2]}>
+          <SimpleGrid justifyItems='center' columns={[1, 2, 2]} gap={1} order={[2, 2, 1]}>
             {/* <Flex direction='column' alignItems='center' gap={1} mt={3}> */}
             <ProjectVideoPlayer src={require('../../../public/mp4/marvel_1.mp4')} />
             <ProjectVideoPlayer src={require('../../../public/mp4/marvel_2.mp4')} />
