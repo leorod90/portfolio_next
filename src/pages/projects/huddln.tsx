@@ -15,9 +15,9 @@ export default function Huddln() {
           Huddln <Badge textTransform="none">2021 - Current</Badge>
         </Title>
         <Paragraph>
-          I was the lead Front End Developer for our mobile app, web app and admin dashboard. UI was handled by<GreenText> Joe </GreenText>
+          I was the lead Front End Developer for our mobile app, web app and admin dashboard. Main designs were handled by<GreenText> Joe </GreenText>
           and <Link href='https://www.linkedin.com/in/jackie-gonzalez-56299bb5/' rel="noopener noreferrer" target='_blank'> Jackie</Link>. While
-          I handled the fun UX things like animations, feedback and transitions. This was a difficult yet rewarding project that I am so happy
+          I handled the fun things like animations, feedback and transitions. This was a difficult yet rewarding project that I am so happy
           to have been a part of.
         </Paragraph>
         <UnorderedList my={4}>
