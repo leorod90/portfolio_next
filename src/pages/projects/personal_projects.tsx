@@ -44,83 +44,83 @@ export default function PersonalProjects() {
           </ListItem>
         </List>
 
-        <Flex gap={6} mt={6}>
-          <Link href='https://apps.apple.com/us/app/leo-eats/id1590637132' rel="noopener noreferrer" target='_blank'>
-            <Image
-              width={160}
-              height={60}
-              src='/photos/app_store.png'
-              alt='apple'
-              // className='grid-item-thumbnail'
-              // placeholder='blur'
-              loading='lazy'
-            />
-          </Link>
-          <Link href='https://play.google.com/store/apps/details?id=expo.leorod18.good_eats' rel="noopener noreferrer" target='_blank'>
-            <Image
-              width={160}
-              height={60}
-              src='/photos/google_play.png'
-              alt='android'
-              // className='grid-item-thumbnail'
-              // placeholder='blur'
-              loading='lazy'
-            />
-          </Link>
-        </Flex>
-
         <Text fontWeight='bold' color='glassTeal' mt={6}>Click Videos to Pause/Play</Text>
-
-        {/* <ProjectImage /> */}
-        <SimpleGrid columns={[1, 1, 2]} gap={1} mt={3}>
-          <Section>
+        <SimpleGrid
+          justifyItems="center"
+          columns={[1, 1, 2]}
+          gap={1}
+          mt={3}
+          flexDirection={['column', 'column', 'row']} // Change direction on small screens
+        >
+          <Flex w="100%" height="100%" justifyContent='center' alignItems='center' order={[1, 1, 2]}>
+            <Flex justifyContent='space-between' width='320px'>
+              <Link href='https://apps.apple.com/us/app/leo-eats/id1590637132' rel="noopener noreferrer" target='_blank'>
+                <Image
+                  width={150}
+                  height={60}
+                  src='/photos/app_store.png'
+                  alt='apple'
+                  // className='grid-item-thumbnail'
+                  // placeholder='blur'
+                  loading='lazy'
+                />
+              </Link>
+              <Link href='https://play.google.com/store/apps/details?id=expo.leorod18.good_eats' rel="noopener noreferrer" target='_blank'>
+                <Image
+                  width={150}
+                  height={60}
+                  src='/photos/google_play.png'
+                  alt='android'
+                  // className='grid-item-thumbnail'
+                  // placeholder='blur'
+                  loading='lazy'
+                />
+              </Link>
+            </Flex>
+          </Flex>
+          <SimpleGrid
+            justifyItems="center"
+            columns={[1, 2, 2]}
+            gap={1}
+            mt={3}
+            order={[2, 2, 1]} // Change order on small screens
+          >
             <ProjectVideoPlayer src={require('../../../public/mp4/eats_1.mp4')} />
-          </Section>
-          <Section>
             <ProjectVideoPlayer src={require('../../../public/mp4/eats_2.mp4')} />
-          </Section>
+          </SimpleGrid>
         </SimpleGrid>
-
-        <Flex gap={6} my={3} w='100%' justifyContent='flex-end'>
-          {/* <Link href='https://apps.apple.com/us/app/huddln/id1503825604' rel="noopener noreferrer" target='_blank'>
-            <Image
-              width={160}
-              height={60}
-              src='/photos/app_store.png'
-              alt='apple'
-              // className='grid-item-thumbnail'
-              // placeholder='blur'
-              loading='lazy'
-            />
-          </Link> */}
-          <Link href='https://play.google.com/store/apps/details?id=com.leo_marvel' rel="noopener noreferrer" target='_blank'>
-            <Image
-              width={160}
-              height={60}
-              src='/photos/google_play.png'
-              alt='android'
-              // className='grid-item-thumbnail'
-              // placeholder='blur'
-              loading='lazy'
-            />
-          </Link>
-        </Flex>
 
         {/* <Text fontWeight='bold' color='glassTeal' mt={6}>Click Videos to Pause/Play</Text> */}
 
-        <SimpleGrid columns={[1, 1, 2]} gap={1} mt={6}>
-          <Section>
+        <SimpleGrid justifyItems='center' columns={[1, 1, 2]} gap={1} mt={3}>
+          <Flex w="100%" height="100%" justifyContent='center' alignItems='center' order={[1, 1, 1]}>
+            <Flex justifyContent='flex-end' width='320px'>
+              <Link href='https://play.google.com/store/apps/details?id=com.leo_marvel' rel="noopener noreferrer" target='_blank'>
+                <Image
+                  width={150}
+                  height={60}
+                  src='/photos/google_play.png'
+                  alt='android'
+                  // className='grid-item-thumbnail'
+                  // placeholder='blur'
+                  loading='lazy'
+                />
+              </Link>
+            </Flex>
+          </Flex>
+          <SimpleGrid justifyItems='center' columns={[1, 2, 2]} gap={1} order={[2, 2, 2]}>
+            {/* <Flex direction='column' alignItems='center' gap={1} mt={3}> */}
             <ProjectVideoPlayer src={require('../../../public/mp4/marvel_1.mp4')} />
-          </Section>
-          <Section>
             <ProjectVideoPlayer src={require('../../../public/mp4/marvel_2.mp4')} />
-          </Section>
+            {/* </Flex> */}
+          </SimpleGrid>
         </SimpleGrid>
+
 
         <Text my={3} fontWeight='bold' color='glassTeal' mt={6}>Bonus Video</Text>
 
         <Box borderRadius='5px' overflow='hidden'>
-          <ProjectVideoPlayer src={require('../../../public/mp4/me_dancing.mov')} />
+          <ProjectVideoPlayer maxWidth='100%' src={require('../../../public/mp4/me_dancing.mov')} />
         </Box>
       </Container>
     </Article>

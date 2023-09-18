@@ -35,7 +35,7 @@ export const Meta = ({ children }) => (
   </Badge>
 )
 
-export const ProjectVideoPlayer = ({ src }) => {
+export const ProjectVideoPlayer = ({ src, maxWidth = '250px' }) => {
   const videoRef = useRef(null);
   const [showsControls, setShowsControls] = useState(true)
 
@@ -60,12 +60,31 @@ export const ProjectVideoPlayer = ({ src }) => {
     }
   };
 
+  const videoRef2 = useRef(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  useEffect(() => {
+    const video = videoRef2.current;
+
+    if (isPlaying) {
+      video.play();
+    } else {
+      video.pause();
+    }
+  }, [isPlaying]);
+
+  const playPause = () => {
+    setIsPlaying(!isPlaying);
+  };
+
   return (
-    <Box overflow="hidden" cursor='pointer' position='relative'>
-      <video ref={videoRef} onClick={handleClick} controls={showsControls} autoPlay={showsControls} loop={showsControls} muted >
-        <source src={src} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-    </Box>
+    <Flex maxW={maxWidth}>
+      <Box overflow="hidden" cursor='pointer' position='relative'>
+        <video ref={videoRef2} onClick={playPause} controls={false} autoPlay={showsControls} loop={showsControls} muted >
+          <source src={src} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </Box>
+    </Flex>
   );
 };

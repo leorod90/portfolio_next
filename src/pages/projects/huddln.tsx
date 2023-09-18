@@ -70,19 +70,13 @@ export default function Huddln() {
 
         <Text fontWeight='bold' color='glassTeal' mt={6}>Click Videos to Pause/Play</Text>
         {/* <ProjectImage /> */}
-        <SimpleGrid columns={[1, 1, 2]} gap={1} mt={3}>
-          <Section>
-            <ProjectVideoPlayer src={require('../../../public/mp4/huddln_1.mp4')} />
-          </Section>
-          <Section>
-            <ProjectVideoPlayer src={require('../../../public/mp4/huddln_2.mp4')} />
-          </Section>
-          <Section>
-            <ProjectVideoPlayer src={require('../../../public/mp4/huddln_3.mp4')} />
-          </Section>
-          <Section>
-            <ProjectVideoPlayer src={require('../../../public/mp4/huddln_4.mp4')} />
-          </Section>
+        <SimpleGrid justifyItems='center' columns={[1, 2, 4]} gap={1} mt={3}>
+          {/* <Flex direction='column' alignItems='center' gap={1} mt={3}> */}
+          <ProjectVideoPlayer src={require('../../../public/mp4/huddln_1.mp4')} />
+          <ProjectVideoPlayer src={require('../../../public/mp4/huddln_2.mp4')} />
+          <ProjectVideoPlayer src={require('../../../public/mp4/huddln_3.mp4')} />
+          <ProjectVideoPlayer src={require('../../../public/mp4/huddln_4.mp4')} />
+          {/* </Flex> */}
         </SimpleGrid>
       </Container>
     </Article>
