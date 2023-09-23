@@ -11,7 +11,7 @@ export default function NotFound() {
 
       <Flex direction='column' alignItems='center'>
         <NextLink href='/'>
-          <Button bg='glassTeal'>Return to home</Button>
+          <Button bg='glassTeal' color='black'>Return to home</Button>
         </NextLink>
       </Flex>
     </Container>

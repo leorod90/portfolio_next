@@ -8,9 +8,9 @@ import { ChevronRightIcon } from '@chakra-ui/icons'
 export const Title = ({ children }) => {
   return (
     <Flex alignItems='center' mb={4}>
-      <NextLink href='/projects'>
+      <NextLink href='/work'>
         <Link as='p'>
-          Projects
+          Work
         </Link>
       </NextLink>
       <span>

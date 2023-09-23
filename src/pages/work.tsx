@@ -7,11 +7,11 @@ import meThumbnail from "../../public/photos/me_thumb.png"
 import consultarerThumbnail from "../../public/photos/consultarer_thumb.png"
 
 //MARGIN FOR CPU BOREKN it covers huddln
-export default function Projects() {
+export default function Work() {
   return (
     <Container >
       <Heading as='h3' fontSize={20} mb={4}>
-        Projects
+        Work
       </Heading>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>

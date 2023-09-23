@@ -77,7 +77,7 @@ export default function Navbar(props) {
           flexGrow={1}
         >
           <LinkItem href='/' path={path}>Home</LinkItem>
-          <LinkItem href='/projects' path={path}>Projects</LinkItem>
+          <LinkItem href='/work' path={path}>Work</LinkItem>
         </Stack>
         <Flex justifyContent='flex-end'>
           {/* <ThemeToggleButton /> */}
@@ -119,7 +119,7 @@ export default function Navbar(props) {
                   <Text >Home</Text>
                 </Flex>
               </NextLink>
-              <NextLink href='/projects' passHref onClick={() => setShowBurger(false)}>
+              <NextLink href='/work' passHref onClick={() => setShowBurger(false)}>
                 <Flex
                   px='12px'
                   py='8px'
@@ -129,7 +129,7 @@ export default function Navbar(props) {
                     cursor: 'pointer',
                   }}
                 >
-                  <Text>Projects</Text>
+                  <Text>Work</Text>
                 </Flex>
               </NextLink>
             </Flex>

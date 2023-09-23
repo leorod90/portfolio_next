@@ -35,7 +35,7 @@ export default function ProjectGridItem({
 }) {
   return (
     <Flex w='100%' alignItems='center' direction='column' >
-      <NextLink href={`/projects/${id}`}>
+      <NextLink href={`/work/${id}`}>
         {/* <LinkBox cursor='pointer'> */}
         <Flex borderRadius='10px' shadow='md' overflow='hidden'>
           <Image
@@ -53,7 +53,7 @@ export default function ProjectGridItem({
         </Flex>
         {/* </LinkBox> */}
       </NextLink>
-      <NextLink href={`/projects/${id}`}>
+      <NextLink href={`/work/${id}`}>
         <Text mt={2} fontSize={20} cursor='pointer'>{title}</Text>
       </NextLink>
       <Text fontSize={14} textAlign='center'>{children}</Text>
