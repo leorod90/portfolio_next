@@ -36,15 +36,15 @@ export default function Home() {
             </Heading>
             <Flex flexDir='column'>
               <Flex alignItems='center'>
-                <Heading as='h2' variant='page-titles' fontSize='12px' color='#ccc' mr='5px' w='45px'>Web:</Heading>
+                <Heading as='h2' variant='page-titles' fontSize='12px' color='#ccc' mr='5px' minW='50px'>Web:</Heading>
                 <p>React / Next / Wordpress</p>
               </Flex>
               <Flex alignItems='center'>
-                <Heading as='h2' variant='page-titles' fontSize='12px' color='#ccc' mr='5px' w='45px'>Mobile:</Heading>
+                <Heading as='h2' variant='page-titles' fontSize='12px' color='#ccc' mr='5px' minW='50px'>Mobile:</Heading>
                 <p>React Native / Swift & Swift</p>
               </Flex>
               <Flex alignItems='center'>
-                <Heading as='h2' variant='page-titles' fontSize='12px' color='#ccc'  mr='5px' w='45px'>Design:</Heading>
+                <Heading as='h2' variant='page-titles' fontSize='12px' color='#ccc' mr='5px' minW='50px'>Design:</Heading>
                 <p>Figma / Blender</p>
               </Flex>
             </Flex>
