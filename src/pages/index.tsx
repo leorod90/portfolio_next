@@ -34,7 +34,20 @@ export default function Home() {
             <Heading as='h2' variant='page-titles'>
               Leo Rodriguez
             </Heading>
-            <p>React / React Native / Next / UI & UX</p>
+            <Flex flexDir='column'>
+              <Flex alignItems='center'>
+                <Heading as='h2' variant='page-titles' fontSize='12px' color='#ccc' mr='5px' w='45px'>Web:</Heading>
+                <p>React / Next / Wordpress</p>
+              </Flex>
+              <Flex alignItems='center'>
+                <Heading as='h2' variant='page-titles' fontSize='12px' color='#ccc' mr='5px' w='45px'>Mobile:</Heading>
+                <p>React Native / Swift & Swift</p>
+              </Flex>
+              <Flex alignItems='center'>
+                <Heading as='h2' variant='page-titles' fontSize='12px' color='#ccc'  mr='5px' w='45px'>Design:</Heading>
+                <p>Figma / Blender</p>
+              </Flex>
+            </Flex>
           </Box>
           <Flex
             flexShrink={0}

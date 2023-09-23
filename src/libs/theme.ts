@@ -4,9 +4,12 @@ import { mode } from '@chakra-ui/theme-tools'
 const styles = {
   global: (props) => ({
     'html, body': {
-      bg: mode('#202023', '#332421')(props),
+      bg: mode('#202023', '#3B2725')(props),
       // bg: '#3B2725',
       color: 'white'
+    },
+    'body': {
+      overflowY: 'hidden'
     },
   }),
 }

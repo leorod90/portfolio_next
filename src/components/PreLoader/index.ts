@@ -36,7 +36,7 @@ export const preLoaderAnim = () => {
     })
     .to("body", {
       duration: 0.1,
-      css: { overflowY: "scroll" },
+      // css: { overflowY: "scroll" },
       ease: "power3.inOut",
     })
     .from(".landing__top .sub", {
@@ -120,7 +120,7 @@ export const closeMenu = () => {
   const tl = gsap.timeline();
   tl.to("body", {
     duration: 0.05,
-    css: { overflowY: "scroll" },
+    // css: { overflowY: "scroll" },
     ease: "power3.inOut",
   })
     .to([".nav-primary", ".nav-secondary"], {
