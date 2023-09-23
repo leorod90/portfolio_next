@@ -75,10 +75,12 @@ export default function Home() {
         </Box>
         <Section delay={.1}>
           <Heading as='h3' variant='section-title'>About Me</Heading>
-          <Paragraph>I am a self taught developer with over 2 years of industry experience.
-            I love building, designing and creating things. While I primarily focus on the front end,
+          <Paragraph>
+            I love building, designing and creating things. My strengths are making sure web/mobile apps are smooth and optimized.
+            I like to make sure users have a great experience and are enjoying what they see. While I primarily focus on the front end,
             I do enjoy all aspects of code. Im lucky that my hobby for developing is now my job and I couldn&apos;t
-            be happier.</Paragraph>
+            be happier. Fun Fact - I am a self taught developer.
+          </Paragraph>
           <Flex alignItems='center' my='4'>
             <Link download href="/Resume.pdf">
               <Button bg='glassTeal' color='black' rightIcon={<DownloadIcon />}>Resume</Button>
