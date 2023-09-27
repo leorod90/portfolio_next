@@ -41,7 +41,7 @@ export default function Home() {
               </Flex>
               <Flex alignItems='center'>
                 <Heading as='h2' variant='page-titles' fontSize='12px' color='#ccc' mr='5px' minW='50px'>Mobile:</Heading>
-                <p>React Native / Swift & Swift</p>
+                <p>React Native / Swift  UI</p>
               </Flex>
               <Flex alignItems='center'>
                 <Heading as='h2' variant='page-titles' fontSize='12px' color='#ccc' mr='5px' minW='50px'>Design:</Heading>
