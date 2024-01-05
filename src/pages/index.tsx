@@ -82,6 +82,7 @@ export default function Home() {
             be happier. Fun Fact - I am a self taught developer.
           </Paragraph>
           <Flex alignItems='center' my='4'>
+            {/* test */}
             <Link download href="/Resume-2024.pdf">
               <Button bg='glassTeal' color='black' rightIcon={<DownloadIcon />}>Resume</Button>
             </Link>
