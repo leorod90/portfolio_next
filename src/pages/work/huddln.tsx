@@ -42,8 +42,9 @@ export default function Huddln() {
             <span>React, React Native, Firebase, GraphQl, Node, Algolia</span>
           </ListItem>
         </List>
+        <Text fontWeight='bold' color='gray' mt={6}>App has been sunset, so some features may no longer work</Text>
 
-        <Flex gap={6} mt={6}>
+        <Flex gap={6} mt={2}>
           <Link href='https://apps.apple.com/us/app/huddln/id1503825604' rel="noopener noreferrer" target='_blank'>
             <Image
               width={160}
@@ -67,7 +68,6 @@ export default function Huddln() {
             />
           </Link>
         </Flex>
-
         <Text fontWeight='bold' color='glassTeal' mt={6}>Click Videos to Pause/Play</Text>
         {/* <ProjectImage /> */}
         <SimpleGrid justifyItems='center' columns={[1, 2, 4]} gap={1} mt={3}>

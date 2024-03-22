@@ -31,17 +31,17 @@ export default function Home() {
       <Container>
         <Box display={{ md: 'flex' }}>
           <Box flexGrow={1}>
-            <Heading as='h2' variant='page-titles'>
+            <Heading as='h2' variant='page-titles' mb={2}>
               Leo Rodriguez
             </Heading>
             <Flex flexDir='column'>
               <Flex alignItems='center'>
                 <Heading as='h2' variant='page-titles' fontSize='12px' color='#ccc' mr='5px' minW='50px'>Web:</Heading>
-                <p>React / Next / Wordpress</p>
+                <p>React / Next / Angular / Wordpress</p>
               </Flex>
               <Flex alignItems='center'>
                 <Heading as='h2' variant='page-titles' fontSize='12px' color='#ccc' mr='5px' minW='50px'>Mobile:</Heading>
-                <p>React Native / Swift  UI</p>
+                <p>React Native / Flutter / Swift</p>
               </Flex>
               <Flex alignItems='center'>
                 <Heading as='h2' variant='page-titles' fontSize='12px' color='#ccc' mr='5px' minW='50px'>Design:</Heading>
