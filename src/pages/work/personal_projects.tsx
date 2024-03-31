@@ -72,7 +72,7 @@ export default function PersonalProjects() {
                 width={50}
                 height={50}
                 src='/photos/good_eats.png'
-                alt='android'
+                alt='app'
                 // className='grid-item-thumbnail'
                 // placeholder='blur'
                 loading='lazy'
@@ -89,7 +89,11 @@ export default function PersonalProjects() {
                     loading='lazy'
                   />
                 </Link>
-                <Link href='https://play.google.com/store/apps/details?id=expo.leorod18.good_eats' rel="noopener noreferrer" target='_blank'>
+                <Box
+                  filter="grayscale(100%)"
+                  cursor='pointer'
+                >
+                  {/* <Link href='https://play.google.com/store/apps/details?id=expo.leorod18.good_eats' rel="noopener noreferrer" target='_blank'> */}
                   <Image
                     width={150}
                     height={60}
@@ -99,14 +103,15 @@ export default function PersonalProjects() {
                     // placeholder='blur'
                     loading='lazy'
                   />
-                </Link>
+                  {/* </Link> */}
+                </Box>
               </Flex>
               <Link mt='10px' href='https://github.com/leorod90/leo-eats' rel="noopener noreferrer" target='_blank'>
                 <Image
                   width={150}
                   height={60}
                   src='/photos/github.png'
-                  alt='android'
+                  alt='github'
                   // className='grid-item-thumbnail'
                   // placeholder='blur'
                   loading='lazy'
@@ -147,13 +152,17 @@ export default function PersonalProjects() {
                 width={50}
                 height={50}
                 src='/photos/leo_marvel.png'
-                alt='android'
+                alt='app'
                 // className='grid-item-thumbnail'
                 // placeholder='blur'
                 loading='lazy'
               />
               <Flex justifyContent='flex-end' width='320px' mt='15px'>
-                <Link href='https://play.google.com/store/apps/details?id=com.leo_marvel' rel="noopener noreferrer" target='_blank'>
+                <Box
+                  filter="grayscale(100%)"
+                  cursor='pointer'
+                >
+                  {/* <Link href='https://play.google.com/store/apps/details?id=com.leo_marvel' rel="noopener noreferrer" target='_blank'> */}
                   <Image
                     width={150}
                     height={60}
@@ -163,14 +172,15 @@ export default function PersonalProjects() {
                     // placeholder='blur'
                     loading='lazy'
                   />
-                </Link>
+                  {/* </Link> */}
+                </Box>
               </Flex>
               <Link mt='10px' href='https://github.com/leorod90/leo_marvel' rel="noopener noreferrer" target='_blank'>
                 <Image
                   width={150}
                   height={60}
                   src='/photos/github.png'
-                  alt='android'
+                  alt='git'
                   // className='grid-item-thumbnail'
                   // placeholder='blur'
                   loading='lazy'
