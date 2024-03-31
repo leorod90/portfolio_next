@@ -43,7 +43,8 @@ export default function PersonalProjects() {
             <span>Blender, Figma</span>
           </ListItem>
         </List>
-
+        <Text fontWeight='bold' color='gray' mt={6}>Oops! My android account was deleted due to inactivity,
+          please bare wih me while I fix the issue.</Text>
         <Text fontWeight='bold' color='glassTeal' mt={6}>Click Videos to Pause/Play</Text>
         <SimpleGrid
           justifyItems="center"
