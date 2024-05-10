@@ -11,14 +11,13 @@ export default function Consultarer() {
     <Article title='Consultarer'>
       <Container>
         <Title>
-          Consultarer <Badge textTransform="none">2023 - Current</Badge>
+          Consultarer <Badge textTransform="none">2023 - 2034</Badge>
         </Title>
         <Paragraph>
-          I was hired to help handle the <GreenText>iOS</GreenText> version of the Consultarer app. Overall designs were done
-          by<Link href='https://www.linkedin.com/in/hong-erica/' rel="noopener noreferrer" target='_blank'> Erica </Link>and
-          <Link href='https://www.linkedin.com/in/harshidavedesigns/' rel="noopener noreferrer" target='_blank'> Harshi</Link>.
-          I only had minor input on the UI/UX (mostly for difference between iOS and Android devices). When we have something
-          to show, I&apos;ll update here.
+          I was hired as a contractor to help implement the <GreenText>iOS</GreenText> version of the Consultarer app. Overall designs were done
+          by <Link href='https://www.linkedin.com/in/hong-erica/' rel="noopener noreferrer" target='_blank'>Erica</Link> and{" "}
+          <Link href='https://www.linkedin.com/in/harshidavedesigns/' rel="noopener noreferrer" target='_blank'>Harshi</Link>.
+          I only had minor input on the UI/UX (mostly for difference between iOS and Android devices).
         </Paragraph>
         {/* <UnorderedList my={4}>
           <ListItem>Ramen shop recommendation based on photo</ListItem>
