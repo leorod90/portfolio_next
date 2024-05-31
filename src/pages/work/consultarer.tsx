@@ -14,10 +14,9 @@ export default function Consultarer() {
           Consultarer <Badge textTransform="none">2023 - 2034</Badge>
         </Title>
         <Paragraph>
-          I was hired as a contractor to help implement the <GreenText>iOS</GreenText> version of the Consultarer app. Overall designs were done
-          by <Link href='https://www.linkedin.com/in/hong-erica/' rel="noopener noreferrer" target='_blank'>Erica</Link> and{" "}
-          <Link href='https://www.linkedin.com/in/harshidavedesigns/' rel="noopener noreferrer" target='_blank'>Harshi</Link>.
-          I only had minor input on the UI/UX (mostly for difference between iOS and Android devices).
+         I was hired as a contractor to implement the <GreenText>iOS</GreenText> version of the Consultarer app. Additionally, I collaborated closely with designer
+        {" "}<Link href='https://www.linkedin.com/in/hong-erica/' rel="noopener noreferrer" target='_blank'>Erica</Link>{" "} 
+         to refine and enhance the app&apos;s design, ensuring a seamless and visually appealing user experience.
         </Paragraph>
         {/* <UnorderedList my={4}>
           <ListItem>Ramen shop recommendation based on photo</ListItem>

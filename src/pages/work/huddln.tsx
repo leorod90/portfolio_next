@@ -15,11 +15,10 @@ export default function Huddln() {
           Huddln <Badge textTransform="none">2021 - 2023</Badge>
         </Title>
         <Paragraph>
-          I was the lead Front End Developer for the <Link href='https://www.huddln.io/' rel="noopener noreferrer" target='_blank'>Huddln</Link>
-          {" "}mobile app, web app and admin dashboard. Main designs were handled by<GreenText> Joe </GreenText>{" "}
-          and <Link href='https://www.linkedin.com/in/jackie-gonzalez-56299bb5/' rel="noopener noreferrer" target='_blank'>Jackie</Link>. While
-          I handled the fun things like animations, feedback and transitions. This was a difficult yet rewarding project that I am so happy
-          to have been a part of.
+          As the Lead Front End Developer for the <Link href='https://www.huddln.io/' rel="noopener noreferrer" target='_blank'>Huddln</Link>,
+          {" "}I played a pivotal role in the design and development of the mobile app, web app, and admin dashboard. Collaborating closely with the main designer,
+          {" "}<Link href='https://www.linkedin.com/in/jackie-gonzalez-56299bb5/' rel="noopener noreferrer" target='_blank'>Jackie</Link>
+          , we successfully brought the vision of Huddln to life.
         </Paragraph>
         <UnorderedList my={4}>
           <ListItem>Ability to make an NFT with your camera and upload it</ListItem>
@@ -32,6 +31,10 @@ export default function Huddln() {
         <List ml={4} my={4}>
           <ListItem>
             <Meta>Website</Meta>
+            <Link href='https://www.huddln.io/' rel="noopener noreferrer" target='_blank'>https://www.huddln.io/</Link>
+          </ListItem>
+          <ListItem>
+            <Meta>dApp</Meta>
             <Link href='https://discover.xp-protocol.io/' rel="noopener noreferrer" target='_blank'>https://discover.xp-protocol.io/</Link>
           </ListItem>
           <ListItem>
@@ -79,6 +82,8 @@ export default function Huddln() {
           <ProjectVideoPlayer src={require('../../../public/mp4/huddln_4.mp4')} />
           {/* </Flex> */}
         </SimpleGrid>
+        <Flex mb={10} />
+        <ProjectImage src='/photos/huddln_figma.png' alt='huddln_figma' />
       </Container>
     </Article>
   )
