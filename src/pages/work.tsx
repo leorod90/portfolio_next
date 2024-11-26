@@ -3,6 +3,7 @@ import Section from '@/components/Section'
 import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
 import React from 'react'
 import huddlnThumbnail from "../../public/photos/huddln_thumb.png"
+import picmeThumbnail from "../../public/photos/picme_thumb.png"
 import meThumbnail from "../../public/photos/me_thumb.png"
 import consultarerThumbnail from "../../public/photos/consultarer_thumb.png"
 
@@ -15,6 +16,11 @@ export default function Work() {
       </Heading>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
+      <Section>
+          <ProjectGridItem id='picme' title='Picme' thumbnail={picmeThumbnail}>
+            Picme is revolutionizing dating by bringing the first ever automated profile tech using AI.
+          </ProjectGridItem>
+        </Section>
         <Section>
           <ProjectGridItem id='huddln' title='Huddln' thumbnail={huddlnThumbnail}>
             A mobile NFT social media app with over 10k users.
