@@ -6,7 +6,7 @@ import { Badge, Container, List, Link, ListItem, UnorderedList, SimpleGrid, Text
 import React from 'react'
 import Image from 'next/image'
 import GreenText from '@/components/GreenText'
-
+//
 export default function Huddln() {
   return (
     <Article title='Picme'>
