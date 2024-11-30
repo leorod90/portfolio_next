@@ -7,12 +7,11 @@ export default function PreLoader() {
   const { colorMode, toggleColorMode } = useColorMode()
   
   useEffect(() => {
-    console.log('test')
     preLoaderAnim();
     if (colorMode === "light") {
       toggleColorMode();
     }
-  }, []);
+  }, [colorMode,toggleColorMode]);
 
   return (
     <div className='preloader'>
