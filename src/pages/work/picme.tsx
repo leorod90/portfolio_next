@@ -69,9 +69,9 @@ export default function Huddln() {
         <SimpleGrid justifyItems='center' columns={[1, 2, 4]} gap={1} mt={3}>
           {/* <Flex direction='column' alignItems='center' gap={1} mt={3}> */}
           <ProjectVideoPlayer src={require('../../../public/mp4/picme_1.mp4')} />
-          {/* <ProjectVideoPlayer src={require('../../../public/mp4/huddln_2.mp4')} />
-          <ProjectVideoPlayer src={require('../../../public/mp4/huddln_3.mp4')} />
-          <ProjectVideoPlayer src={require('../../../public/mp4/huddln_4.mp4')} /> */}
+          <ProjectVideoPlayer src={require('../../../public/mp4/picme_2.mp4')} />
+          {/* <ProjectVideoPlayer src={require('../../../public/mp4/huddln_3.mp4')} /> */}
+          {/* <ProjectVideoPlayer src={require('../../../public/mp4/huddln_4.mp4')} /> */}
           {/* </Flex> */}
         </SimpleGrid>
         <Flex mb={10} />
